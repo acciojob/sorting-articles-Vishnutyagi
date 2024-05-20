@@ -1,1 +1,9 @@
-/*  your css code here. If applicable */
+.main{
+	display:flex;
+	justify-content: center;
+}
+.container{
+	width:60%;
+	border: 5px lighter black;
+	background-color:white
+}
