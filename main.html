@@ -8,32 +8,13 @@
 
 <body>
 	<div class="main" style="width:100vw;height:100vh;background-image:url('https://plus.unsplash.com/premium_photo-1673306778968-5aab577a7365?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-		<div class="container">
+		<div id="bands">
 			<ul id="band">
 			</ul>
 		</div>
 	</div>
     <script type="text/javascript" src="./script.js">
-		//your JS code here. If required.
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
-function stripArticle(word) {
-	return word.replace(/^(a |an |the )/i, '').trim();
-}
-
-const sortedBands = bands.slice().sort((a, b) => {
-	if (stripArticle(a) < stripArticle(b)) return -1;
-	if (stripArticle(a) > stripArticle(b)) return 1;
-	return 0;
-});
-
-const bandList = document.getElementById('band');
-
-sortedBands.forEach(band => {
-	const li = document.createElement('li');
-	li.textContent = band;
-	bandList.appendChild(li);
-});
-
+		
 </script>
 
 </body>
